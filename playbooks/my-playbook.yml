@@ -1,7 +1,7 @@
 
 ---
 - name: Install java and net-tools
-  hosts: web1
+  hosts: server
   tasks:
     - name: Update apt repo and cache
       ansible.builtin.apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
